@@ -103,6 +103,27 @@ export default function Navbar() {
                   Skills
                 </button>
               </li>
+              <li style={{ margin: "1em" }}>
+                <button
+                  style={{
+                    background: 'transparent',
+                    fontWeight: "bold",
+                    width: "7em",
+                    height: "2em",
+                    color: '#746D63',
+                    backgroundImage: `url(${code})`,
+                    backgroundPositionY: "center",
+                    backgroundPositionX: "3px",
+                    fontSize: '20px',
+                    padding: '0 0 0 15px',
+                    backgroundRepeat: "no-repeat",
+                    borderRadius: "5px",
+                    
+                  }}
+                >
+                  Projetos
+                </button>
+              </li>
             </ul>
           </div>
         </div>
