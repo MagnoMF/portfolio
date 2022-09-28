@@ -1,0 +1,142 @@
+/* Desktop version */
+.navbar {
+  display: flex;
+  background: #31282e;
+  height: 11em;
+  margin-top: 0.5em;
+}
+
+.foto--img {
+  width: 0;
+  margin: 0;
+}
+.nome {
+  margin: auto 0 auto 1.5em;
+}
+
+.nome h1 {
+  font-size: 2em;
+  color: #dc944c;
+}
+
+.nome h4 {
+  font-size: 1em;
+  color: #dc944c;
+}
+
+.midia-social {
+  margin: 1.5em 1.5em 0 auto;
+  text-align: end;
+}
+
+.midia-social .wrapp-btns {
+  height: 50%;
+}
+
+.wrapp-btns__btn {
+  border: none;
+  background: transparent;
+  width: 35px;
+  height: 35px;
+}
+
+.btn--linkedin {
+  background-image: url(../img/brand-linkedin.svg);
+}
+
+.btn--github {
+  background-image: url(../img/brand-github.svg);
+}
+
+.btns-nav {
+  height: 50%;
+}
+
+.btns-nav ul {
+  display: flex;
+}
+
+.btns-nav li {
+  margin: 1em;
+}
+
+.btns-nav__btn {
+  font-weight: bold;
+  width: 7em;
+  height: 2em;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 0 0 0 15px;
+  background-position-x: 3px !important;
+  background-position-y: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.btns-nav .clicked {
+  color: #120c12;
+  background: #dc944c;
+}
+
+.btns-nav .unclicked {
+  color: #746d63;
+  background: transparent;
+}
+/* Desktop version */
+
+/* Mobile version */
+@media (max-width: 820px) {
+  .foto--img {
+    width: 0;
+    margin: 0;
+  }
+  .nome {
+    transition-duration: 500ms;
+    margin: 1.5em 0 auto 1.5em;
+  }
+
+  .nome h1 {
+    font-size: 1.5em;
+    color: #dc944c;
+  }
+
+  .nome h4 {
+    font-size: 1em;
+    color: #dc944c;
+  }
+
+  .btns-nav li {
+    transition-duration: 500ms;
+    margin: 0.3em;
+  }
+
+  .btns-nav__btn {
+    width: 2em;
+    background-position-x: center !important;
+    text-indent: -9999px;
+  }
+
+  .btns-nav .clicked {
+    transition-duration: 300ms;
+    color: #120c12;
+    background: #dc944c;
+    width: 7em;
+    margin-left: -7em;
+    background-position-x: 3px !important;
+    text-indent: 0;
+  }
+}
+/* Mobile version */
+
+/* BLoco pode existir por si só e é independente; um componente
+Blocos podem ser header; footer ou checkbox
+Blocos podem ter o nome comum para indentificar o bloco ex menu */
+
+/* Elemento está vinculado ao bloco e não faz sentido sózinho
+Elemento pode ser um item de menu. item de lista. label do checkbox
+o nome do elemento será o nome do bloco e dois underline e o nome do elemento
+menu__item */
+
+/* Modificador é a variante de um bloco ou elemento
+Usado para variar o style de um elemento; pode
+ ser um disabled ou um checked
+modificador utiliza dois ifens ou seja menu--dark */

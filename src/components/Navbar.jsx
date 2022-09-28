@@ -1,125 +1,48 @@
 import React from "react";
-import gitImage from "../img/brand-github.svg";
-import lnkImage from "../img/brand-linkedin.svg";
+import papper from "../img/papper.svg";
 import code from "../img/code.svg";
 import book from "../img/book.svg";
-import papper from "../img/papper.svg";
+import fotoPerfil from "../img/foto-perfil.svg";
+import "../style/navbar.css";
 
 export default function Navbar() {
   return (
     <React.Fragment>
-      <div
-        style={{
-          display: "flex",
-          background: "#31282E",
-          height: "11em",
-          marginTop: ".5em",
-        }}
-      >
-        <div
-          style={{
-            margin: "auto 0 auto 1.5em",
-          }}
-        >
-          <h1
-            style={{
-              fontSize: "2em",
-              color: "#DC944C",
-            }}
-          >
-            Magno de Miranda
-          </h1>
-          <h4
-            style={{
-              fontSize: "1em",
-              color: "#DC944C",
-            }}
-          >
-            Programador Jr.
-          </h4>
+      <div className="navbar">
+        <div id="foto">
+          <img className="foto--img" src={fotoPerfil} alt="foto-perfil" />
         </div>
-        <div style={{ margin: "1.5em 1.5em 0 auto", textAlign: "end" }}>
-          <div style={{ height: "50%" }}>
-            <button
-              style={{
-                border: "none",
-                background: "transparent",
-                backgroundImage: `url(${gitImage})`,
-                width: "35px",
-                height: "35px",
-              }}
-            />
-            <button
-              style={{
-                border: "none",
-                background: "transparent",
-                backgroundImage: `url(${lnkImage})`,
-                width: "35px",
-                height: "35px",
-              }}
-            />
+        <div className="nome">
+          <h1>Magno de Miranda</h1>
+          <h4>Programador Jr.</h4>
+        </div>
+        <div className="midia-social">
+          <div className="wrapp-btns">
+            <button className="wrapp-btns__btn btn--linkedin" />
+            <button className="wrapp-btns__btn btn--github" />
           </div>
-          <div style={{ height: "50%" }}>
-            <ul style={{ display: "flex" }}>
-              <li style={{ margin: "1em" }}>
+          <div className="btns-nav">
+            <ul>
+              <li>
                 <button
-                  style={{
-                    background: '#DC944C',
-                    fontWeight: "bold",
-                    width: "6em",
-                    height: "2em",
-                    color: "#120C12",
-                    backgroundImage: `url(${papper})`,
-                    backgroundPositionY: "center",
-                    backgroundPositionX: "3px",
-                    fontSize: '20px',
-                    padding: '0 0 0 15px',
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    
-                  }}
+                  style={{ backgroundImage: `url(${papper})` }}
+                  className="btns-nav__btn clicked btn--sobre"
                 >
                   Sobre
                 </button>
               </li>
-              <li style={{ margin: "1em" }}>
+              <li>
                 <button
-                  style={{
-                    background: 'transparent',
-                    fontWeight: "bold",
-                    width: "6em",
-                    height: "2em",
-                    color: '#746D63',
-                    backgroundImage: `url(${book})`,
-                    backgroundPositionY: "center",
-                    backgroundPositionX: "3px",
-                    fontSize: '20px',
-                    padding: '0 0 0 15px',
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    
-                  }}
+                  style={{ backgroundImage: `url(${book})` }}
+                  className="btns-nav__btn unclicked"
                 >
                   Skills
                 </button>
               </li>
-              <li style={{ margin: "1em" }}>
+              <li>
                 <button
-                  style={{
-                    background: 'transparent',
-                    fontWeight: "bold",
-                    width: "7em",
-                    height: "2em",
-                    color: '#746D63',
-                    backgroundImage: `url(${code})`,
-                    backgroundPositionY: "center",
-                    backgroundPositionX: "3px",
-                    fontSize: '20px',
-                    padding: '0 0 0 15px',
-                    backgroundRepeat: "no-repeat",
-                    borderRadius: "5px",
-                    
-                  }}
+                  className="btns-nav__btn unclicked"
+                  style={{ backgroundImage: `url(${code})` }}
                 >
                   Projetos
                 </button>
