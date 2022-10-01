@@ -26,7 +26,7 @@ export default function Navbar() {
               <li>
                 <button
                   style={{ backgroundImage: `url(${papper})` }}
-                  className="btns-nav__btn clicked btn--sobre"
+                  className="btns-nav__btn clicked"
                 >
                   Sobre
                 </button>

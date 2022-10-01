@@ -7,8 +7,8 @@
 }
 
 .foto--img {
-  width: 0;
-  margin: 0;
+  width: 9em;
+  margin: 1em;
 }
 .nome {
   margin: auto 0 auto 1.5em;
@@ -126,17 +126,3 @@
   }
 }
 /* Mobile version */
-
-/* BLoco pode existir por si só e é independente; um componente
-Blocos podem ser header; footer ou checkbox
-Blocos podem ter o nome comum para indentificar o bloco ex menu */
-
-/* Elemento está vinculado ao bloco e não faz sentido sózinho
-Elemento pode ser um item de menu. item de lista. label do checkbox
-o nome do elemento será o nome do bloco e dois underline e o nome do elemento
-menu__item */
-
-/* Modificador é a variante de um bloco ou elemento
-Usado para variar o style de um elemento; pode
- ser um disabled ou um checked
-modificador utiliza dois ifens ou seja menu--dark */
