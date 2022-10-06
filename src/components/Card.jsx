@@ -5,15 +5,17 @@ export default function Card() {
   return (
     <div
       style={{
+        pointerEvents: "none",
+        flex: "none",
         margin: "15px",
-        background: "transparent",
         height: "22rem",
-        width: "17rem",
+        width: "17em",
       }}
     >
       <div
         style={{
           borderRadius: "1.5em 1.5em 0  0 ",
+          pointerEvents: "none",
           height: "50%",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -22,6 +24,7 @@ export default function Card() {
       />
       <div
         style={{
+          pointerEvents: "none",
           borderRadius: "0 0 1.5em 1.5em",
           height: "50%",
           background: "blue",
@@ -30,9 +33,18 @@ export default function Card() {
           boxSizing: "border-box",
         }}
       >
-        <h2 style={{ color: "#DC944C", textAlign: "center" }}>Título</h2>
+        <h2
+          style={{
+            pointerEvents: "none",
+            color: "#DC944C",
+            textAlign: "center",
+          }}
+        >
+          Título
+        </h2>
         <p
           style={{
+            pointerEvents: "none",
             marginTop: "1em",
             textAlign: "center",
             color: "#746D63",
