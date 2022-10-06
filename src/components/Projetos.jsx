@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Card from "./Card";
+import "../style/projetos.css";
 
 export default function Projetos() {
   useEffect(() => {
@@ -7,26 +8,16 @@ export default function Projetos() {
     carousel.addEventListener("wheel", (e) => {
       e.preventDefault();
       if (e.deltaY > 0) {
-        e.target.scrollBy(270, 0);
+        e.target.scrollBy(300, 0);
       } else {
-        e.target.scrollBy(-270, 0);
+        e.target.scrollBy(-300, 0);
       }
     });
   }, []);
 
   return (
     <React.Fragment>
-      <div
-        className="carousel"
-        style={{
-          overflowX: "auto",
-          scrollBehavior: "smooth",
-          boxSizing: "border-box",
-          width: "85%",
-          display: "flex",
-          margin: "0 auto",
-        }}
-      >
+      <div className="carousel">
         <Card />
         <Card />
         <Card />

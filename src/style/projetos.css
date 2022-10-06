@@ -1,0 +1,39 @@
+.carousel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 1.5em;
+}
+
+.card-wrapper {
+  pointer-events: none;
+  flex: none;
+  margin: 15px;
+  height: 22rem;
+  width: 17em;
+}
+
+.card-body {
+  pointer-events: none;
+  border-radius: 0 0 1.5em 1.5em;
+  height: 50%;
+  background: blue;
+  background-color: #31282e;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-body-title {
+  pointer-events: none;
+  color: #dc944c;
+  text-align: center;
+}
+
+.card-body-text {
+  pointer-events: none;
+  margin-top: 1em;
+  text-align: center;
+  color: #746d63;
+  display: flex;
+}
