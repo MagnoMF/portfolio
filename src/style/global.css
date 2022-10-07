@@ -17,3 +17,23 @@ button {
 body {
   background-color: #211720;
 }
+
+/*Scroll style*/
+/* Tamanho de barra */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Barra interna */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #746d63;
+}
+
+/*Barra interna*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #dc944c;
+}
+/*Scroll style*/
