@@ -28,6 +28,11 @@ export default function Projetos() {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </React.Fragment>
   );
