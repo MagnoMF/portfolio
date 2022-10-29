@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import MouseAnimation from "./components/MouseAnimation";
 import Sobre from "./components/Sobre";
 import Projetos from "./components/Projetos";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Sobre/>
       <Projetos/>
+      <Skills/>
     </React.Fragment>
   );
 }
