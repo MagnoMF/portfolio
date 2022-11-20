@@ -5,8 +5,8 @@ export default function MouseAnimation() {
   useEffect(() => {
     const mouse = document.querySelector(".cursor");
     document.addEventListener("mousemove", (e) => {
-      mouse.style.left = e.pageX + "px";
-      mouse.style.top = e.pageY + "px";
+      mouse.style.left = e.pageX + 1 + "px";
+      mouse.style.top = e.pageY + 1 + "px";
     });
   }, []);
 
