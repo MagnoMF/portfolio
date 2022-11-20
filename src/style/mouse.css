@@ -6,3 +6,11 @@
   position: absolute;
   background-color: rgb(20, 238, 20);
 }
+
+@media (max-width: 820px) {
+  .cursor {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
