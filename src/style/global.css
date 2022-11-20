@@ -17,3 +17,9 @@ button {
 body {
   background-color: #211720;
 }
+
+@media (max-width: 820px) {
+  * {
+    cursor: auto;
+  }
+}
