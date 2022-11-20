@@ -1,0 +1,55 @@
+/* Desktop Version */
+.wrapp {
+  margin: 7rem 3em;
+}
+
+.wrapp-image {
+  width: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+.avatar-image {
+  height: 0;
+  width: 0;
+}
+
+.wrapp-text {
+  display: inline-block;
+  margin: auto;
+}
+
+.text {
+  font-size: 20px;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+/* Desktop Version */
+
+/* Mobile Version */
+@media (max-width: 820px) {
+  .wrapp-text {
+    width: 100%;
+  margin: auto;
+    
+  }
+
+  .wrapp-image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    opacity: 1;
+  }
+  
+  .avatar-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .wrapp {
+    margin: 7rem 1em;
+  }
+}
+/* Mobile Version */
