@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import MouseAnimation from "./components/MouseAnimation";
 import Sobre from "./components/Sobre";
+import Projetos from "./components/Projetos";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <MouseAnimation/>
       <Navbar/>
       <Sobre/>
+      <Projetos/>
     </React.Fragment>
   );
 }
