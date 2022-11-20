@@ -37,3 +37,9 @@ body {
   background: #dc944c;
 }
 /*Scroll style*/
+
+@media (max-width: 820px) {
+  * {
+    cursor: auto;
+  }
+}
