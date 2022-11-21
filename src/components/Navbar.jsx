@@ -1,7 +1,12 @@
 import React from "react";
-import papper from "../img/papper.svg";
-import code from "../img/code.svg";
-import book from "../img/book.svg";
+import iconeProjetosAtivado from "../img/iconeProjetosAtivado.svg";
+import iconeProjetosDesativado from "../img/iconeProjetosDesativado.svg";
+import iconeSkillsAtivado from "../img/iconeSkillsAtivado.svg";
+import iconeSkillsDesativado from "../img/iconeSkillsDesativado.svg";
+import iconeSobreAtivado from "../img/iconeSobreAtivado.svg";
+import iconeSobreDesativado from "../img/iconeSobreDesativado.svg";
+import BotaoNavbar from "./BotaoNavbar";
+import ContextBotoesNavbarProvider from "../contexts/ContextBotoesNavbar";
 import fotoPerfil from "../img/foto-perfil.svg";
 import "../style/navbar.css";
 
@@ -22,32 +27,34 @@ export default function Navbar() {
             <button className="wrapp-btns__btn btn--github" />
           </div>
           <div className="btns-nav">
-            <ul>
-              <li>
-                <button
-                  style={{ backgroundImage: `url(${papper})` }}
-                  className="btns-nav__btn clicked"
-                >
-                  Sobre
-                </button>
-              </li>
-              <li>
-                <button
-                  style={{ backgroundImage: `url(${book})` }}
-                  className="btns-nav__btn unclicked"
-                >
-                  Skills
-                </button>
-              </li>
-              <li>
-                <button
-                  className="btns-nav__btn unclicked"
-                  style={{ backgroundImage: `url(${code})` }}
-                >
-                  Projetos
-                </button>
-              </li>
-            </ul>
+            <ContextBotoesNavbarProvider>
+              <ul>
+                <li>
+                  <BotaoNavbar
+                    id="sobre"
+                    texto="Sobre"
+                    iconeAtivado={iconeSobreAtivado}
+                    iconeDesativado={iconeSobreDesativado}
+                  />
+                </li>
+                <li>
+                  <BotaoNavbar
+                    id="skills"
+                    texto="Skills"
+                    iconeAtivado={iconeSkillsAtivado}
+                    iconeDesativado={iconeSkillsDesativado}
+                  />
+                </li>
+                <li>
+                  <BotaoNavbar
+                    id="projetos"
+                    texto="Projetos"
+                    iconeAtivado={iconeProjetosAtivado}
+                    iconeDesativado={iconeProjetosDesativado}
+                  />
+                </li>
+              </ul>
+            </ContextBotoesNavbarProvider>
           </div>
         </div>
       </div>
