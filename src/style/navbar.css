@@ -73,11 +73,13 @@
 }
 
 .btns-nav .clicked {
+  transition-duration: 300ms;
   color: #120c12;
   background: #dc944c;
 }
 
 .btns-nav .unclicked {
+  transition-duration: 300ms;
   color: #746d63;
   background: transparent;
 }
@@ -120,7 +122,6 @@
     color: #120c12;
     background: #dc944c;
     width: 7em;
-    margin-left: -7em;
     background-position-x: 3px !important;
     text-indent: 0;
   }
