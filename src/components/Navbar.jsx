@@ -23,8 +23,15 @@ export default function Navbar() {
         </div>
         <div className="midia-social">
           <div className="wrapp-btns">
-            <button className="wrapp-btns__btn btn--linkedin" />
-            <button className="wrapp-btns__btn btn--github" />
+            <a target="_blank" href="https://github.com/MagnoMF">
+              <button className="wrapp-btns__btn btn--github" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/magnomferreira/"
+            >
+              <button className="wrapp-btns__btn btn--linkedin" />
+            </a>
           </div>
           <div className="btns-nav">
             <ContextBotoesNavbarProvider>
