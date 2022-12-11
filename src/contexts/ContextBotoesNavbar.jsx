@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const ContextBotoesNavbar = createContext({
   styleBotoes: {},
@@ -12,30 +12,40 @@ const ContextBotoesNavbarProvider = ({ children }) => {
     projetos: { ativo: false, class: "unclicked" },
   });
 
-  const ativarBotao = (botaoClicado) => {
-    const idBotaoClicado = botaoClicado.target.id;
-    setStyleBotoes((prevState) => {
-      const keys = Object.keys(prevState);
-      const newState = keys.map((key) => {
-        if (idBotaoClicado === key) {
-          if (prevState[idBotaoClicado]["ativo"] === true) {
-            return { ativo: false, class: "unclicked" };
-          }
-          return { ativo: true, class: "clicked" };
-        } else {
-          return { ativo: false, class: "unclicked" };
-        }
-      });
-      return {
-        sobre: newState[0],
-        skills: newState[1],
-        projetos: newState[2],
-      };
+  function ativarBotoesNavbar() {
+    window.addEventListener("scroll", (e) => {
+      const YScrollPage = window.pageYOffset;
+      if (YScrollPage <= 200) {
+        setStyleBotoes({
+          sobre: { ativo: true, class: "clicked" },
+          skills: { ativo: false, class: "unclicked" },
+          projetos: { ativo: false, class: "unclicked" },
+        });
+      }
+      if (YScrollPage >= 200 && YScrollPage <= 648) {
+        setStyleBotoes({
+          sobre: { ativo: false, class: "unclicked" },
+          skills: { ativo: false, class: "unclicked" },
+          projetos: { ativo: true, class: "clicked" },
+        });
+      }
+      if (YScrollPage >= 648) {
+        setStyleBotoes({
+          sobre: { ativo: false, class: "unclicked" },
+          skills: { ativo: true, class: "clicked" },
+          projetos: { ativo: false, class: "unclicked" },
+        });
+      }
+
     });
-  };
+  }
+
+  useEffect(() => {
+    ativarBotoesNavbar();
+  }, []);
 
   return (
-    <ContextBotoesNavbar.Provider value={{ styleBotoes, ativarBotao }}>
+    <ContextBotoesNavbar.Provider value={{ styleBotoes }}>
       {children}
     </ContextBotoesNavbar.Provider>
   );

@@ -1,0 +1,14 @@
+.wrappHamburger {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+
+.wrappHamburger__item {
+  margin: 0.5em;
+}
+
+.btn--align {
+  text-align: center;
+}

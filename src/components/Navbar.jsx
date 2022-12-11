@@ -13,7 +13,7 @@ import "../style/navbar.css";
 export default function Navbar() {
   return (
     <React.Fragment>
-      <div className="navbar">
+      <div id="_navbar" className="navbar">
         <div id="foto">
           <img className="foto--img" src={fotoPerfil} alt="foto-perfil" />
         </div>
@@ -30,28 +30,34 @@ export default function Navbar() {
             <ContextBotoesNavbarProvider>
               <ul>
                 <li>
-                  <BotaoNavbar
-                    id="sobre"
-                    texto="Sobre"
-                    iconeAtivado={iconeSobreAtivado}
-                    iconeDesativado={iconeSobreDesativado}
-                  />
+                  <a href="#_sobre">
+                    <BotaoNavbar
+                      id="sobre"
+                      texto="Sobre"
+                      iconeAtivado={iconeSobreAtivado}
+                      iconeDesativado={iconeSobreDesativado}
+                    />
+                  </a>
                 </li>
                 <li>
-                  <BotaoNavbar
-                    id="skills"
-                    texto="Skills"
-                    iconeAtivado={iconeSkillsAtivado}
-                    iconeDesativado={iconeSkillsDesativado}
-                  />
+                  <a href="#_skills">
+                    <BotaoNavbar
+                      id="skills"
+                      texto="Skills"
+                      iconeAtivado={iconeSkillsAtivado}
+                      iconeDesativado={iconeSkillsDesativado}
+                    />
+                  </a>
                 </li>
                 <li>
-                  <BotaoNavbar
-                    id="projetos"
-                    texto="Projetos"
-                    iconeAtivado={iconeProjetosAtivado}
-                    iconeDesativado={iconeProjetosDesativado}
-                  />
+                  <a href="#_projetos" style={{ transition: "1ms" }}>
+                    <BotaoNavbar
+                      id="projetos"
+                      texto="Projetos"
+                      iconeAtivado={iconeProjetosAtivado}
+                      iconeDesativado={iconeProjetosDesativado}
+                    />
+                  </a>
                 </li>
               </ul>
             </ContextBotoesNavbarProvider>

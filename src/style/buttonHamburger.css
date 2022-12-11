@@ -1,0 +1,18 @@
+.wrappHamburger__btn--ativado {
+  background-color: #31282e;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid #dc944c;
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.wrappHamburger__btn--desativado {
+  transition: all 0.5s ease-in-out;
+  width: 0px;
+  height: 0px;
+  border: none;
+}

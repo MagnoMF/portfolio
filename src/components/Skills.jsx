@@ -8,7 +8,7 @@ import LineSkill from "./LineSkill";
 export default function Skills() {
   return (
     <React.Fragment>
-      <div style={{ margin: "1rem", color: "white" }}>
+      <div id="_skills" style={{ margin: "1rem", color: "white" }}>
         <ul>
           <li>
             <LineSkill
