@@ -37,7 +37,6 @@ const ContextBotoesNavbarProvider = ({ children }) => {
         });
       }
 
-      console.log(YScrollPage);
     });
   }
 
