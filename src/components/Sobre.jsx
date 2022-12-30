@@ -5,7 +5,7 @@ import "../style/sobre.css";
 export default function Sobre() {
   return (
     <React.Fragment>
-      <div className="wrapp">
+      <div id="_sobre" className="wrapp">
         <div className="wrapp-image">
           <img className="avatar-image" src={fotoPerfil} alt="foto-perfil" />
         </div>

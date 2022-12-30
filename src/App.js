@@ -4,6 +4,7 @@ import MouseAnimation from "./components/MouseAnimation";
 import Sobre from "./components/Sobre";
 import Projetos from "./components/Projetos";
 import Skills from "./components/Skills";
+import NavbarLateral from "./components/NavbarLateral";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Sobre/>
       <Projetos/>
       <Skills/>
+      <NavbarLateral/>
     </React.Fragment>
   );
 }
