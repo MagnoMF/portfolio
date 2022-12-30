@@ -47,7 +47,7 @@ Dos projetos que fiz na empresa não são publicaveis... então irei fazer algun
 
 <h2 id="sobre_o_projeto" style="text-align: center;">Sobre o Projeto</h2>
 <p>Este projeto foi feito utilizando <img style="height: 17px" src="./imgReadme/react_icon.svg"> React.js,  <img style="height: 17px" src="./imgReadme/css_icon.svg"> CSS e <img style="height: 17px" src="./imgReadme/html_icon.svg"> HTML.</p>
-<p>Um dos motivos para escolher React é que estava utilizando em alguns projetos para empresa e queria colocar em prática o que ja havia aprendido em prática o que já havia aprendido em teoria.</p>
+<p>Um dos motivos para escolher React é que estava utilizando em alguns projetos para a empresa e queria colocar em prática o que já havia aprendido em teoria.</p>
 
 <p>É a primeira vez que utilizo o método BEM para CSS, achei facil de compreender e utilizar, acredito que vou tomar como padrão para os proximos projetos pela facilidade de compreender o CSS que está sendo utilizado na página.</p>
 
