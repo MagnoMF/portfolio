@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Portifólio</h1>
+<h1 style="text-align: center;">Portfólio</h1>
 
 <h2>Índices</h2>
 <p><a href="https://magnomf.github.io/portfolio/">Link página do projeto</a></p>
