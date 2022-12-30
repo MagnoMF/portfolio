@@ -4,7 +4,7 @@
 <p><a href="https://magnomf.github.io/portfolio/">Link página do projeto</a></p>
 <p><a href="#navegacao">Navegação na página</a></p>
 <p><a href="#sessoes">Sessões da página</a></p>
-<p><a href="#sobre">Sobre o Projeto</a></p>
+<p><a href="#sobre_o_projeto">Sobre o Projeto</a></p>
 
 <h2>Foto Projeto inteiro</h2>
 <p style="text-align: center;">
@@ -45,7 +45,7 @@ Dos projetos que fiz na empresa não são publicaveis... então irei fazer algun
 <img src="./imgReadme/sessao_3.png">
 </p>
 
-<h2 id="sobre" style="text-align: center;">Sobre o Projeto</h2>
+<h2 id="sobre_o_projeto" style="text-align: center;">Sobre o Projeto</h2>
 <p>Neste projeto foi feito utilizando <img style="height: 17px" src="./imgReadme/react_icon.svg"> React.js,  <img style="height: 17px" src="./imgReadme/css_icon.svg"> CSS e <img style="height: 17px" src="./imgReadme/html_icon.svg"> HTML.</p>
 <p>Um dos motivos para escolher React é que estava utilizando em alguns projetos para empresa e queria colocar em prática o que ja havia aprendido em prática o que já havia aprendido em teoria.</p>
 
